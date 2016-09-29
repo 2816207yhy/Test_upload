@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.lingpao.test28.MainActivity">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择购买本书的具体时间"/>
+    <!--定义一个DatePicker组件-->
+    <DatePicker android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:startYear="2000"
+        android:endYear="2100"
+        android:calendarViewShown="true"
+        android:spinnersShown="true"
+        ></DatePicker>
+    <!--定义一个TimePicker组件-->
+    <TimePicker android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        ></TimePicker>
+    <EditText android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:cursorVisible="false"/>
+</LinearLayout>
+</RelativeLayout>

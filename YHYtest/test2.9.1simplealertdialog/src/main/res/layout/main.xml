@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lingpao.test291simplealertdialog.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试文本内容"
+            android:textSize="11pt"
+            android:background="#ff00ff00"
+            android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical">
+        <Button android:id="@+id/bn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/th_gray"
+            android:scrollHorizontally="true"
+            android:background="#00000000"
+            android:text="登录界面"
+
+            />
+            <ImageButton android:id="@+id/image_bn_login"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/bn_login"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/th_gray"
+                android:background="#00000000"
+                android:scaleType   ="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录界面"
+            android:textSize="20dp"
+            android:layout_below="@id/image_bn_login"
+            android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <Button android:id="@+id/bn_singleChoise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/th_blue"
+                android:text="单选界面"
+                android:background="#00000000"
+
+                />
+            <ImageButton android:id="@+id/image_bn_singleChoise"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/bn_singleChoise"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/th_blue"
+                android:background="#00000000"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单选界面"
+                android:textSize="20dp"
+                android:layout_below="@id/image_bn_singleChoise"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:layout_gravity="right">
+            <Button android:id="@+id/bn_multiChoise"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/th_green"
+                android:background="#00000000"
+                android:text="多选界面"
+
+                />
+
+            <ImageButton android:id="@+id/image_bn_multiChoise"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/bn_multiChoise"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/th_green"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                android:adjustViewBounds="false" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多选界面"
+                android:textSize="20dp"
+                android:layout_below="@id/image_bn_multiChoise"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ViewSwitcher android:id="@+id/ViewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ViewSwitcher>
+    <TextView android:id="@+id/hidetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+    <Button android:id="@+id/button_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/hidetext"
+        android:onClick="prev"
+        android:text="&lt;"/>
+    <Button android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/hidetext"
+       android:onClick="next"
+        android:text="&gt;"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:text="Hello World!" />
+</RelativeLayout>
